@@ -99,7 +99,7 @@ It doesn't filter the string delivered by the user
 
 ...
 
-`
+```c
 
 if( v6 && *(_BYTE *)v6 )
 
@@ -113,7 +113,7 @@ if( v6 && *(_BYTE *)v6 )
     
 }
 
-`
+```
 
 ...
 

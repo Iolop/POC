@@ -99,6 +99,7 @@ It doesn't filter the string delivered by the user
 
 ...
 `
+
 if( v6 && *(_BYTE *)v6 )
 
 {
@@ -108,8 +109,9 @@ if( v6 && *(_BYTE *)v6 )
     snprintf((char *)&v5, 0x800u, "cfm post netctrl 51?op=3,string_info=%s", v6, v4);
 
     system((const char *)&v5);
-    
+
 }
+
 `
 ...
 

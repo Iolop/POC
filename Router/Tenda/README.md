@@ -98,6 +98,7 @@ In sub_A6E8 function:
 It doesn't filter the string delivered by the user
 
 ...
+
 `
 
 if( v6 && *(_BYTE *)v6 )
@@ -113,6 +114,7 @@ if( v6 && *(_BYTE *)v6 )
 }
 
 `
+
 ...
 
 -----------------------------

@@ -1,4 +1,4 @@
-Command injection and FS walk though can only be used in LAN but they don't need any authentication.
+Command injection doesn't need any authentication.
 
 Tenda ARCH:arm
 
@@ -7,11 +7,9 @@ support:wget telnetd iptables
 usage: 
 
 - Ac series Command Injection.py ip port cmd
-- Ac series File System walk through.py ip port path
 
 some problems: 
 
-- FS walk through can't read the file,it looks like another 'ls' command.
 - port means nginx's open port,not httpd
 
 
@@ -54,12 +52,6 @@ Ac18  ac18_kf_V15.03.05.19(6318_)_cn
 [Attack Type]:
 
 Remote
-
------------------------------
-
-[Can Cause Denial of Service?]:
-
-yes
 
 -----------------------------
 

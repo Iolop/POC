@@ -1,4 +1,4 @@
-Directory Traversal can only be used in LAN but it doesn't need any authentication.
+Directory Traversal doesn't need any authentication.
 
 Tenda ARCH:arm
 
@@ -96,7 +96,7 @@ It doesn't filter the string delivered by the user
     sprintf((char *)&v14, "%s%s", 0x1AF0C, v12 + 5, v11);// sprintf(..../var/etc/upan,point_at_path)
 
     dirp = opendir((const char *)&v14);
-    
+
     if ( dirp )
 
 ```

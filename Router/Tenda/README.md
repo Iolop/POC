@@ -55,12 +55,6 @@ Remote
 
 -----------------------------
 
-[Can Cause Denial of Service?]:
-
-yes
-
------------------------------
-
 [Rerference]:
 
 https://github.com/Iolop/Poc/tree/master/Router/Tenda
@@ -69,15 +63,13 @@ https://github.com/Iolop/Poc/tree/master/Router/Tenda
 
 [Discoverer]:
 
-Zixin Wang, Sichuan Silent Information Technology Company Ltd, http://www.silence.com.cn/
+Zixin Wang, Sichuan Silent Information Technology Co.,Ltd http://www.silence.com.cn/
 
 -----------------------------
 
 [Affected components]:
 
 Affected executable application: app_data_center
-
-Affected function: sub_A6E8  usbeject_process_entry(int processed_string,int a2)
 
 -----------------------------
 
@@ -91,7 +83,7 @@ allows remote unauthenticated attackers to execute arbitrary OS commands in LAN 
 
 [Vulnerability details]:
 
-In sub_A6E8 function:
+In vulnerable function:
 
 It doesn't filter the string delivered by the user
 

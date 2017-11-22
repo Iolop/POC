@@ -1,29 +1,27 @@
-Command injection can only be used in LAN but it doesn't need any authentication.
+Directory Traversal can only be used in LAN but it doesn't need any authentication.
 
 Tenda ARCH:arm
 
-support:wget telnetd iptables
-
 usage: 
 
-- Ac series Command Injection.py ip port cmd
+- Ac series Directory Traversal.py ip port path
 
 some problems: 
 
 - port means nginx's open port,not httpd
 
 
-Here are the details of Command Injection:
+Here are the details of Directory Traversal:
 
 [Vulnerability]:
 
-Command Injection
+Directory Traversal
 
 -----------------------------
 
 [Exploitation]:
 
-Execute arbitraty OS commands
+Walk through the file system
 
 -----------------------------
 
@@ -75,9 +73,9 @@ Affected executable application: app_data_center
 
 [Vulnerability description]:
 
-Command Injection vulnerability in Shenzhen Tenda Technology Tenda's Ac series routers with firmware which was released recently 
+Directory Traversal vulnerability in Shenzhen Tenda Technology Tenda's Ac series routers with firmware which was released recently 
 
-allows remote unauthenticated attackers to execute arbitrary OS commands in LAN from a crafted GET request.
+allows remote unauthenticated attackers to walk through file system in LAN from a crafted GET request.
 
 -----------------------------
 
@@ -91,17 +89,15 @@ It doesn't filter the string delivered by the user
 
 ```c
 
-if( v6 && *(_BYTE *)v6 )
+  if ( point_at_path && !strncmp(point_at_path, "/usb/", 5u) )
 
-{
+  {
 
-    sub_A510(v6);
+    sprintf((char *)&v14, "%s%s", 0x1AF0C, v12 + 5, v11);// sprintf(..../var/etc/upan,point_at_path)
+
+    dirp = opendir((const char *)&v14);
     
-    snprintf((char *)&v5, 0x800u, "cfm post netctrl 51?op=3,string_info=%s", v6, v4);
-    
-    system((const char *)&v5);
-    
-}
+    if ( dirp )
 
 ```
 
@@ -111,6 +107,6 @@ if( v6 && *(_BYTE *)v6 )
 
 [exp.py]
 
-check the Ac series Command Injection.py
+check the Ac series Directory Traversal.py
 
 

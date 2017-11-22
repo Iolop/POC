@@ -77,7 +77,7 @@ Affected function: sub_A6E8  usbeject_process_entry(int processed_string,int a2)
 
 [Vulnerability description]:
 
-Command Injection vulnerability in Shenzhen Tenda Technology Tenda's Ac series routers with firmware which was released recently 
+Command Injection vulnerability in Tenda Technology Tenda's Ac series routers with firmware which was released recently 
 
 allows remote unauthenticated attackers to execute arbitrary OS commands in LAN from a crafted GET request.
 

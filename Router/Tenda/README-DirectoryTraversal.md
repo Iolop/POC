@@ -73,7 +73,7 @@ Affected executable application: app_data_center
 
 [Vulnerability description]:
 
-Directory Traversal vulnerability in Shenzhen Tenda Technology Tenda's Ac series routers with firmware which was released recently 
+Directory Traversal vulnerability in Tenda Technology Tenda's Ac series routers with firmware which was released recently 
 
 allows remote unauthenticated attackers to walk through file system in LAN from a crafted GET request.
 

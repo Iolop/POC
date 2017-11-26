@@ -5,6 +5,7 @@ Tenda ARCH:arm
 usage: 
 
 - Ac series Directory Traversal.py ip port path
+- path looks like this:/usb/PATH
 
 some problems: 
 

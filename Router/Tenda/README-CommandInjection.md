@@ -63,7 +63,7 @@ https://github.com/Iolop/Poc/tree/master/Router/Tenda
 
 [Discoverer]:
 
-Zixin Wang, pkav of Sichuan Silent Information Technology Co.,Ltd, http://www.silence.com.cn/
+Zixin Wang, Sichuan Silent Information Technology Co.,Ltd, http://www.silence.com.cn/
 
 -----------------------------
 

